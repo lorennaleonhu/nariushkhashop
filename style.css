@@ -1,5 +1,5 @@
 :root {
-    --verde: #1A3933; --crema: #F5F5DC; --oro: #C5A059; --blanco: #ffffff;
+    --verde: #4A3B63; --crema: #FFF3DF; --oro: #D99AAF; --blanco: #FFFFFF;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -627,3 +627,323 @@ body {
     letter-spacing: 1px;
     font-weight: 400 !important;
 }
+
+
+/* =========================================================
+   NARIUSHKHA SHOP — IDENTIDAD VISUAL
+   Paleta inspirada en el logo:
+   crema + rosa + morado + azul índigo
+   ========================================================= */
+
+:root {
+    --nari-crema: #FFF3DF;
+    --nari-crema-claro: #FFF9F1;
+    --nari-rosa: #E3A6B8;
+    --nari-rosa-claro: #F5D9E1;
+    --nari-morado: #5A3D7A;
+    --nari-morado-oscuro: #44335F;
+    --nari-azul: #304B96;
+    --nari-azul-claro: #E7EBF8;
+    --nari-texto: #40374B;
+    --nari-gris: #756D78;
+}
+
+/* Base */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--nari-crema);
+    color: var(--nari-texto);
+}
+
+/* Header superior */
+.main-header {
+    background: rgba(255, 249, 241, 0.96);
+    border-bottom: 1px solid rgba(227, 166, 184, 0.35);
+    box-shadow: 0 3px 18px rgba(90, 61, 122, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.brand-name {
+    color: var(--nari-morado) !important;
+    font-weight: 600;
+}
+
+.brand-slogan {
+    color: var(--nari-rosa) !important;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar-luxury {
+    background: linear-gradient(135deg, var(--nari-morado-oscuro), var(--nari-morado));
+    box-shadow: 0 5px 20px rgba(68, 51, 95, 0.16);
+}
+
+.logo-brand,
+.hamburger,
+.action-icon {
+    color: #FFF9F1 !important;
+}
+
+.search-wrapper {
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+#search-input::placeholder {
+    color: rgba(255, 249, 241, 0.75);
+}
+
+/* Insignias */
+.notif-badge {
+    background: var(--nari-rosa) !important;
+    color: #FFFFFF !important;
+    border-color: var(--nari-morado) !important;
+}
+
+/* Menú lateral */
+.side-drawer {
+    background: linear-gradient(160deg, var(--nari-morado-oscuro), var(--nari-morado));
+    box-shadow: 8px 0 30px rgba(68, 51, 95, 0.18);
+}
+
+.menu-link {
+    color: #FFF9F1 !important;
+}
+
+.submenu {
+    border-left-color: var(--nari-rosa) !important;
+}
+
+.submenu a {
+    color: #F5D9E1 !important;
+}
+
+/* Contenido informativo */
+#contenidoPagina {
+    color: var(--nari-texto);
+}
+
+#contenidoPagina h2 {
+    color: var(--nari-morado);
+}
+
+/* Hero */
+.hero {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(227,166,184,.22), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(48,75,150,.10), transparent 30%);
+}
+
+.hero h1 {
+    color: var(--nari-morado);
+}
+
+/* Productos */
+.product-grid {
+    background: var(--nari-crema);
+}
+
+.product-card {
+    background: #FFFDF9;
+    border: 1px solid rgba(227, 166, 184, 0.25);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 5px 18px rgba(90, 61, 122, 0.07);
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(90, 61, 122, 0.14);
+    border-color: rgba(227, 166, 184, 0.55);
+}
+
+.img-container {
+    border-radius: 10px;
+    background: var(--nari-crema-claro);
+}
+
+.img-container img {
+    transition: transform .5s ease;
+}
+
+.product-card:hover .img-container img {
+    transform: scale(1.025);
+}
+
+.brand-tag-card {
+    color: var(--nari-rosa) !important;
+    font-weight: 700;
+}
+
+.discount-badge {
+    background: var(--nari-azul) !important;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 3px 8px rgba(48, 75, 150, 0.20);
+}
+
+.fav-btn-item {
+    color: var(--nari-morado);
+    box-shadow: 0 3px 10px rgba(68, 51, 95, 0.10);
+}
+
+.fav-btn-item.active {
+    color: var(--nari-rosa) !important;
+}
+
+.btn-add-luxury {
+    background: linear-gradient(135deg, var(--nari-morado), var(--nari-azul)) !important;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(90, 61, 122, 0.16);
+}
+
+.btn-add-luxury:hover {
+    background: linear-gradient(135deg, var(--nari-azul), var(--nari-morado)) !important;
+    transform: translateY(-1px);
+}
+
+/* Detalles del producto */
+.custom-details {
+    border-bottom-color: rgba(227, 166, 184, 0.30);
+}
+
+.custom-details summary {
+    color: var(--nari-morado) !important;
+}
+
+.detalles-contenido {
+    color: var(--nari-texto);
+    background: var(--nari-crema-claro);
+    border: 1px solid rgba(227, 166, 184, 0.20);
+    border-radius: 8px;
+}
+
+/* Carrito */
+.cart-drawer {
+    background: #FFFDF9;
+    box-shadow: -12px 0 35px rgba(68, 51, 95, 0.14);
+}
+
+.cart-header {
+    border-bottom-color: rgba(227, 166, 184, 0.30);
+}
+
+.cart-header h3 {
+    color: var(--nari-morado) !important;
+}
+
+.close-btn:hover {
+    color: var(--nari-morado);
+}
+
+.cart-item {
+    border-bottom-color: rgba(227, 166, 184, 0.20);
+}
+
+.cart-item img {
+    border-radius: 8px;
+}
+
+.cart-item b {
+    color: var(--nari-morado) !important;
+}
+
+.cart-footer {
+    background: var(--nari-crema-claro);
+    border-top-color: rgba(227, 166, 184, 0.30);
+}
+
+.cart-footer .row.total {
+    border-top-color: rgba(227, 166, 184, 0.35);
+    color: var(--nari-morado);
+}
+
+/* WhatsApp / acción principal */
+.btn-whatsapp {
+    background: linear-gradient(135deg, var(--nari-morado), var(--nari-azul)) !important;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(68, 51, 95, 0.18);
+}
+
+.btn-whatsapp:hover {
+    background: linear-gradient(135deg, var(--nari-azul), var(--nari-morado)) !important;
+}
+
+/* Footer */
+.main-footer {
+    background: var(--nari-crema-claro);
+    color: var(--nari-texto);
+    border-top-color: rgba(227, 166, 184, 0.35);
+}
+
+.footer-logo {
+    color: var(--nari-morado) !important;
+}
+
+.footer-nav-simple a {
+    color: var(--nari-gris);
+}
+
+.footer-nav-simple a:hover {
+    color: var(--nari-morado) !important;
+}
+
+.social-flex a {
+    color: var(--nari-azul);
+}
+
+.social-flex a:hover {
+    color: var(--nari-rosa) !important;
+}
+
+.footer-bottom {
+    border-top-color: rgba(227, 166, 184, 0.30);
+    color: #9A8F9A;
+}
+
+/* Producto agotado */
+.sold-out-overlay {
+    background: rgba(68, 51, 95, 0.30) !important;
+}
+
+.sold-out-overlay span {
+    background: rgba(68, 51, 95, 0.70) !important;
+    border-top-color: rgba(255, 249, 241, 0.55);
+    border-bottom-color: rgba(255, 249, 241, 0.55);
+}
+
+.sold-out-btn {
+    background: #E3DFE4 !important;
+    color: #756D78 !important;
+}
+
+/* Scrollbar */
+.detalles-contenido::-webkit-scrollbar-thumb {
+    background: var(--nari-rosa) !important;
+}
+
+/* Banner: mantiene la lógica actual, solo armoniza el fondo */
+.banner-carousel,
+.slide img {
+    background-color: var(--nari-crema-claro) !important;
+}
+
+/* Móvil */
+@media (max-width: 800px) {
+    .product-card {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .brand-name {
+        color: var(--nari-morado) !important;
+    }
+}
+
