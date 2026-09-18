@@ -267,7 +267,7 @@ if (!p.precio || p.precio <= 0) {
                     <img src="${p.imagen}" onerror="this.src='https://placehold.co/400x600?text=PIETRA+&CO.'">
                 </div>
                 <div class="product-info" style="padding-top:15px; text-align:left;">
-                    <span class="brand-tag-card" style="font-size: 0.6rem; letter-spacing: 2px; color: #999; text-transform: uppercase; display: block; margin-bottom: 5px;">PIETRA & CO.</span>
+                    <span class="brand-tag-card" style="font-size: 0.6rem; letter-spacing: 2px; color: #999; text-transform: uppercase; display: block; margin-bottom: 5px;">Nariushkha Shop</span>
                     <h3 style="font-family:'Cormorant Garamond'; font-size:1.3rem; margin-bottom:5px; color:var(--verde); line-height: 1.1;">${p.nombre}</h3>
                     
                     <details class="custom-details">
