@@ -368,7 +368,7 @@ async function cargarBanners() {
     }
 }
 function enviarWhatsApp() {
-    let msg = `*PEDIDO PIETRA & CO.*\n\n`;
+    let msg = `*PEDIDO NARIUSHKHA SHOP*\n\n`;
     carrito.forEach(p => msg += `• ${p.nombre} (S/ ${p.precio.toFixed(2)})\n`);
     msg += `\n*TOTAL CON ENVÍO:* S/ ${document.getElementById('total-final').innerText}`;
     window.open(`https://wa.me/${NUMERO_WA}?text=${encodeURIComponent(msg)}`);
