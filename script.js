@@ -1,4 +1,4 @@
-const SHEET_ID = '1yCaW3sQQqeXDs0bU3vpvJ3KcfUbrgvIH1omNLaVJdc0';
+const SHEET_ID = '1BoWQQk73dRJdH3NTHautP-aixEbDr3uRWgXfmlbUP20';
 const GID_BANNERS = '338089071';
 const GID_COLECCIONES = '1042206871'; // Tu nuevo GID
 const GID_MENU_EXTRA = '804444273';      // Hoja Menu_Principal
